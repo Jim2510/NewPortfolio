@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 .navbar {
   display: flex;
@@ -19,6 +20,7 @@
   flex-direction: row;
   margin: 0;
   list-style: none;
+  margin-left: -350px;
 }
 
 ul li {
@@ -60,6 +62,56 @@ ul li a {
   margin-top: 3px;
 }
 
+.menu-button {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-button.active {
+  transform: rotate(90deg);
+}
+
+.action_btn.hidden {
+  display: none;
+}
+
+.links.show {
+  width: 120px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #00000086;
+  z-index: 1000;
+  border-radius: 0 0 0 10px;
+  
+}
+
+.links.show li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+}
+
+
+/* Aggiungi stili per nascondere il pulsante .action_btn quando il menu è visibile */
+.menu-button + .links.show {
+  margin-top: 10px;
+}
+
+
+
+
 @media (max-width: 900px) {
   .logo img {
     width: 100px;
@@ -70,6 +122,27 @@ ul li a {
     font-size: 16px;
     margin: 0 5px;
   }
+
+  .links {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+  }
+
+  .menu-button  {
+    display: block;
+  }
+
+  .action_btn {
+    display: none;
+  }
+
+
 }
 
 @media (max-width: 600px) {

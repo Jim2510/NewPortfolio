@@ -3,7 +3,6 @@ import { useState } from "react";
 import img1 from "../../../assets/My project-1.png";
 import img2 from "../../../assets/ml.jpeg";
 import img3 from "../../../assets/coding.jpg";
-import { Fade } from "react-awesome-reveal";
 import {Reveal} from '../../../Reveal'
 
 export default function Card() {
@@ -29,7 +28,7 @@ export default function Card() {
     },
     
   ]
-  const [cards, setCards] = useState(initialCards);
+  const [cards] = useState(initialCards);
   return (
     // <div className="home-title">
 

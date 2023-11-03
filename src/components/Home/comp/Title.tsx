@@ -4,8 +4,8 @@ export default function Title() {
   return (
     <div id="rotate-words">
       <div>
-      Creating extraordinary digital experiences.
-        <br /> <span>Just for you</span>
+      Hello, I'm Gim
+        <br /> <span>Front end developer</span>
       </div>
       <div>
       Turning ideas into interactive designs.

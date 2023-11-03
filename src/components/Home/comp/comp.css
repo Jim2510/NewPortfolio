@@ -198,7 +198,7 @@ figure.snip1477.hover figcaption {
     }
 
     .opac {
-      width: 250px;
+      width: fit-content;
       height: fit-content;
       flex-direction: column;
     }
@@ -214,4 +214,23 @@ figure.snip1477.hover figcaption {
       object-fit: contain;
   
     }
+}
+
+
+@media (max-width: 600px) {
+  .opac {
+    margin-top: 150px ;
+  }
+
+  figure.snip1477 {
+    width: 350px;
+    height: 300px;
+}
+
+figure.snip1477 img{
+  width: 350px;
+  height: 300px;
+  object-fit: contain;
+
+}
 }

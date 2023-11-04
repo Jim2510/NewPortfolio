@@ -7,7 +7,8 @@
   height: 60px;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  background-color: #000000a9;
+  backdrop-filter: blur(5px);
   margin: 0;
   padding: 0;
   z-index: 999;
@@ -20,7 +21,6 @@
   flex-direction: row;
   margin: 0;
   list-style: none;
-  margin-left: -350px;
 }
 
 ul li {
@@ -35,20 +35,36 @@ ul li a {
   color: #fff;
 }
 
+ul li a:hover {
+  color: #00917c;
+  transition: all ease 0.3s;
+}
+
+
 .action_btn {
-  display: flex;
-  justify-self: end;
-  font-size: 20px;
+  display: inline-block;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  margin-right: 60px;
-  border: 1px solid #004037;
+  padding: 10px 20px;
   background-color: #00917c;
-  padding: 5px;
-  border-radius: 45%;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.5s;
+  cursor: pointer;
+  margin-right: 20px;
+}
 
+.action_btn:hover {
+  background-color: #007866;
+  transform: scale(1.05);
+}
+
+.action_btn:active {
+  background-color: #00917c;
+  transform: scale(1.00)
 }
 
 .logo {
@@ -90,7 +106,7 @@ ul li a {
   position: absolute;
   top: 50px;
   right: 0;
-  background-color: #00000086;
+  background-color: #000000a9;
   z-index: 1000;
   border-radius: 0 0 0 10px;
   

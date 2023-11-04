@@ -34,7 +34,7 @@ export default function Card() {
 
     // </div>
 
-    <div className="ds">
+    <div className="ds" id="about">
       <div className="opac">
       {cards.map((card, index) => (
     // <Fade key={index} cascade damping={0.3}>

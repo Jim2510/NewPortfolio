@@ -40,7 +40,6 @@ ul li a:hover {
   transition: all ease 0.3s;
 }
 
-
 .action_btn {
   display: inline-block;
   font-size: 16px;
@@ -64,7 +63,7 @@ ul li a:hover {
 
 .action_btn:active {
   background-color: #00917c;
-  transform: scale(1.00)
+  transform: scale(1);
 }
 
 .logo {
@@ -101,16 +100,15 @@ ul li a:hover {
 
 .links.show {
   width: 120px;
-  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 50px;
   right: 0;
   background-color: #000000a9;
+  backdrop-filter: blur(5px);
   z-index: 1000;
   border-radius: 0 0 0 10px;
-  
 }
 
 .links.show li {
@@ -120,14 +118,10 @@ ul li a:hover {
   padding: 10px;
 }
 
-
 /* Aggiungi stili per nascondere il pulsante .action_btn quando il menu è visibile */
 .menu-button + .links.show {
   margin-top: 10px;
 }
-
-
-
 
 @media (max-width: 900px) {
   .logo img {
@@ -151,19 +145,17 @@ ul li a:hover {
     background-color: #000;
   }
 
-  .menu-button  {
+  .menu-button {
     display: block;
   }
 
   .action_btn {
     display: none;
   }
-
-
 }
 
 @media (max-width: 600px) {
-  .navbar ul li{
+  .navbar ul li {
     font-size: 12px;
   }
 

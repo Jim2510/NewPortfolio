@@ -25,7 +25,7 @@ export default function Navbar() {
       <ul className={`links ${menuVisible ? "show" : ""}`}>
         <Reveal>
           <li>
-            <a href="#home">
+            <a href="#rotate-words">
               <b>Home</b>
             </a>
           </li>

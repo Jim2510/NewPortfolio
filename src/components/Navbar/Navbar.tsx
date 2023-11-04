@@ -23,41 +23,31 @@ export default function Navbar() {
         <FontAwesomeIcon icon={menuVisible ? faTimes : faBars} />
       </button>
       <ul className={`links ${menuVisible ? "show" : ""}`}>
-        <Reveal>
           <li>
             <a href="#rotate-words">
               <b>Home</b>
             </a>
           </li>
-        </Reveal>
-        <Reveal>
           <li>
             <a href="#about">
               <b>About</b>
             </a>
           </li>
-        </Reveal>
-        <Reveal>
           <li>
             <a href="#services">
               <b>Services</b>
             </a>
           </li>
-        </Reveal>
-        <Reveal>
           <li>
             <a href="#portfolio">
               <b>Portfolio</b>
             </a>
           </li>
-        </Reveal>
-        <Reveal>
           <li>
             <a href="#contact">
               <b>Contacts</b>
             </a>
           </li>
-        </Reveal>
       </ul>
       <a href="#about" className={`action_btn ${menuVisible ? "hidden" : ""}`}>
         Start

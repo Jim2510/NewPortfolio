@@ -1,9 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
 
+.cont-title-proj {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 400px;
+}
 
+
+
+.title-proj {
+    text-align: start;
+    font-size: 3em;
+    font-family: 'Raleway', Arial, sans-serif;
+color: #fff;
+}
+
+.clr{
+    border: solid 1px #00917c;
+}
 
 .card-proj {
-    min-width: 400px;
+    min-width: 330px;
     width: 20%;
     height: 350px;
     margin: 0 auto;
@@ -45,4 +62,5 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }

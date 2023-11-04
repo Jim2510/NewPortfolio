@@ -43,18 +43,27 @@ export default function Projects() {
 
   return (
     <>
+      <div className="cont-title-proj">
+        <Reveal>
+          <h2 className="title-proj">Project.</h2>
+        </Reveal>
+        <hr className="clr" />
+      </div>
       <div className="container-crd">
         {projects.map((card) => (
           <div className="card-proj" key={card.id}>
-            <Reveal>
-              <div className="container-info">
-                <img src={card.img} alt="" />
-
+            <div className="container-info">
+              <img src={card.img} alt="" />
+              <Reveal>
                 <h4>{card.title}</h4>
+              </Reveal>
+              <Reveal>
                 <p className="tec">{card.tec}</p>
+              </Reveal>
+              <Reveal>
                 <p>{card.description}</p>
-              </div>
-            </Reveal>
+              </Reveal>
+            </div>
           </div>
         ))}
       </div>

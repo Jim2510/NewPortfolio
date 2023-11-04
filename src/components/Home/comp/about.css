@@ -27,6 +27,7 @@
 .master-container {
     display: flex;
     justify-content: center;
+    margin-top: 200px;
 
 }
 
@@ -47,6 +48,8 @@
     border: solid 1px #00917b7d;
     border-bottom: none;
     color:#fff;
+    border-top: none;
+    border-right: none;
 }
 
 .container1 h2 {
@@ -64,6 +67,8 @@
     background-color: #0000007c;
     backdrop-filter: blur(5px);
     border: solid 1px #00917b7d;
+    border-bottom: none;
+    border-right: none;
 }
 
 .subcontainer-skills {
@@ -89,7 +94,28 @@
     height: 40px;
     align-items: center;
     width: 55%;
+    background-color: #0000007c;
+    border-top: solid 1px #00917b7d;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 100px;
+    backdrop-filter: blur(5px);
 }
+
+.links-about span {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ico {
+    width: 30px;
+    height: 20px;
+    color: #00917c;
+}
+
+
 
 @media (max-width: 600px) {
 

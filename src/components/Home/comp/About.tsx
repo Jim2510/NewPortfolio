@@ -105,18 +105,18 @@ export default function About() {
         </div>
       </div>
       <div className="links-about">
-          <p>My links → </p>
-          <a href="https://github.com/Jim2510">
-            <FontAwesomeIcon icon={faGithub} />
+          <p>My links    <span>→</span>     </p>
+          <a target="blank" href="https://github.com/Jim2510">
+            <FontAwesomeIcon className="ico" icon={faGithub} />
           </a>
-          <a href="YOUR_LINKEDIN_PROFILE_URL">
-            <FontAwesomeIcon icon={faLinkedin} />
+          <a target="blank" href="https://www.linkedin.com/in/gianmarco-guglielmino-4803a1221/">
+            <FontAwesomeIcon className="ico" icon={faLinkedin} />
           </a>
-          <a href="YOUR_REDDIT_PROFILE_URL">
-            <FontAwesomeIcon icon={faReddit} />
+          <a target="blank" href="https://www.reddit.com/?onetap_auto=true">
+            <FontAwesomeIcon className="ico" icon={faReddit} />
           </a>
-          <a href="YOUR_SOUNDCLOUD_PROFILE_URL">
-            <FontAwesomeIcon icon={faSoundcloud} />
+          <a target="blank" href="https://soundcloud.com/guglielmino2510">
+            <FontAwesomeIcon className="ico" icon={faSoundcloud} />
           </a>
         </div>
     </>

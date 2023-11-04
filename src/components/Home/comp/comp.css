@@ -215,9 +215,7 @@ figure.snip1477.hover figcaption {
 }
 
 @media (max-width: 600px) {
-  .opac {
-    padding: 150px;
-  }
+  
 
   figure.snip1477 {
     width: 350px;

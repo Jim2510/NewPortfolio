@@ -1,3 +1,4 @@
+import About from "./comp/About";
 import Background from "./comp/Background";
 import Card from "./comp/Card";
 import Title from "./comp/Title";
@@ -11,6 +12,7 @@ export default function Home() {
       <Background />
       <Title />
         <Card />
+        <About />
     </div>
   );
 }

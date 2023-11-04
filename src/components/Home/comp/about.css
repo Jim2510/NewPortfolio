@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+
+.container-about {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    background-color: #00000079;
+    backdrop-filter: blur(5px);
+    
+}
+
+.about-text {
+    font-family: 'Raleway', Arial, sans-serif;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+.about-text h1 {
+    padding-top: 15px;
+}
+
+.master-container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-skills {
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    font-family: 'Raleway', Arial, sans-serif;
+
+}
+
+.container1 {
+    width: 100%;
+    height: auto;
+    background-color: #0000007c;
+    backdrop-filter: blur(5px);
+    border: solid 1px #00917b7d;
+    border-bottom: none;
+    color:#fff;
+}
+
+.container1 h2 {
+    padding: 10px;
+}
+
+.container1 p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container2 {
+    width: 100%;
+    height: auto;
+    background-color: #0000007c;
+    backdrop-filter: blur(5px);
+    border: solid 1px #00917b7d;
+}
+
+.subcontainer-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont-grey {
+    padding: 5px;
+    background-color: #00917c;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    min-width: 50px;
+    color: #000;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .container-about {
+        width: 70%;
+    }
+
+    .container-about h1 {
+        font-size: 26px;
+    }
+
+    .container-about p {
+        font-size: 12px;
+    }
+
+    .container1 {
+        text-align: center;
+    }
+
+    .subcontainer-skills {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container1 h2 {
+        text-align: center;
+        font-size: 10px;
+        margin-top: 21px;
+    }
+
+    .container1 p {
+        font-size: 8px;
+        
+    }
+
+    .cont-grey {
+        padding: 2px;
+        background-color: #00917c;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        border-radius: 5px;
+        min-width: 30px;
+        color: #000;
+        text-align: center;
+    }
+
+
+}
+

@@ -70,5 +70,10 @@
    #rotate-words {
     padding-top: 200px;
     margin-bottom: 350px;
+    font-size: 3em !important;
+   }
+
+   #rotate-words span {
+    font-size: .4em;
    }
   }

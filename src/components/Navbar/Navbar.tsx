@@ -2,7 +2,7 @@ import "./navbar.css";
 import logo from "../../assets/Logo.png";
 import { Reveal } from "../../Reveal.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faB, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 export default function Navbar() {

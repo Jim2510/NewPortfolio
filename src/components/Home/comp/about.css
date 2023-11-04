@@ -10,6 +10,8 @@
     
 }
 
+
+
 .about-text {
     font-family: 'Raleway', Arial, sans-serif;
     width: 100%;
@@ -25,6 +27,7 @@
 .master-container {
     display: flex;
     justify-content: center;
+
 }
 
 .container-skills {
@@ -77,6 +80,15 @@
     min-width: 50px;
     color: #000;
     text-align: center;
+}
+
+.links-about {
+    display: flex;
+    justify-content: start;
+    margin:auto;
+    height: 40px;
+    align-items: center;
+    width: 55%;
 }
 
 @media (max-width: 600px) {

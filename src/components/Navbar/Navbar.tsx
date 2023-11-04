@@ -2,7 +2,7 @@ import "./navbar.css";
 import logo from "../../assets/Logo.png";
 import { Reveal } from "../../Reveal.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faB, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -19,8 +19,8 @@ export default function Navbar() {
           <img src={logo} alt="logo" />
         </a>
       </div>
-      <button className="menu-button" onClick={toggleMenu}>
-        <FontAwesomeIcon icon={faBars} />
+      <button className={`menu-button ${menuVisible ? "active" : ""}`} onClick={toggleMenu}>
+        <FontAwesomeIcon icon={menuVisible ? faTimes : faBars} />
       </button>
       <ul className={`links ${menuVisible ? "show" : ""}`}>
         <Reveal>

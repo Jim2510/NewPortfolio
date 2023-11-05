@@ -1,6 +1,5 @@
 import "./navbar.css";
 import logo from "../../assets/Logo.png";
-import { Reveal } from "../../Reveal.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";

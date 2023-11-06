@@ -5,6 +5,9 @@ import img2 from "../../../assets/Screenshot 2023-10-29 175923.png";
 import img3 from "../../../assets/Screenshot 2023-10-29 211448.png";
 import img4 from "../../../assets/Immagine 2023-09-04 233135.png";
 import { Reveal } from "../../../Reveal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export default function Projects() {
   const cards = [
@@ -15,6 +18,8 @@ export default function Projects() {
       tec: "lodash, axios, node.js",
       description:
         "Progetto che integra l'API di hackernews per visualizzare le news in tempo reale",
+      websiteUrl: "https://example.com",
+      githubUrl: "https://github.com/yourusername/yourrepo",
     },
     {
       id: 2,
@@ -45,7 +50,7 @@ export default function Projects() {
     <>
       <div className="cont-title-proj">
         <Reveal>
-          <h2 className="title-proj">Project.</h2>
+          <h2 className="title-proj">Projects.</h2>
         </Reveal>
         <hr className="clr" />
       </div>
@@ -53,7 +58,25 @@ export default function Projects() {
         {projects.map((card) => (
           <div className="card-proj" key={card.id}>
             <div className="container-info">
-              <img src={card.img} alt="" />
+              <div className="container-info">
+                <img src={card.img} alt="" />
+                <div className="project-buttons">
+                  <a
+                    href={card.websiteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="project-button">
+                      <FontAwesomeIcon style={{width:'30px', height:'auto', color:'#000'}} icon={faLink} />
+                    </button>
+                  </a>
+                  <a href={card.githubUrl} target="_blank">
+                    <button className="project-button">
+                      <FontAwesomeIcon style={{width:'30px', height:'auto', color:'#000'}} icon={faGithub} />
+                    </button>
+                  </a>
+                </div>
+              </div>
               <Reveal>
                 <h4>{card.title}</h4>
               </Reveal>

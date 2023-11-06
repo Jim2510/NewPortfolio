@@ -15,7 +15,7 @@
 }
 
 .clr {
-  border: solid 1px #00917c;
+  border: solid 1px #00917b93;
 }
 
 .card-proj {
@@ -64,16 +64,26 @@
   }
   
   .project-button {
-    background-color: #00917c;
+    background-color: #00917b93;
     color: #fff;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
     cursor: pointer;
-    
-  }
+    transition: ease all 0.15s;
+    }
+
+    .project-button:hover {
+    transform: scale(1.2);
+    background-color: #fff;
+    }
+
+    .project-button:active {
+        background-color: #00917c;
+        transform: scale(1.0);
+    }
 
 .tec {
   padding: 10px;

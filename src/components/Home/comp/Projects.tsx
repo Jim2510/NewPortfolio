@@ -67,12 +67,20 @@ export default function Projects() {
                     rel="noopener noreferrer"
                   >
                     <button className="project-button">
-                      <FontAwesomeIcon style={{width:'30px', height:'auto', color:'#000'}} icon={faLink} />
+                      <FontAwesomeIcon
+                        className="site"
+                        style={{ width: "45px", height: "auto", color: "#000" }}
+                        icon={faLink}
+                      />
                     </button>
                   </a>
                   <a href={card.githubUrl} target="_blank">
                     <button className="project-button">
-                      <FontAwesomeIcon style={{width:'30px', height:'auto', color:'#000'}} icon={faGithub} />
+                      <FontAwesomeIcon
+                        className="git"
+                        style={{ width: "45px", height: "auto", color: "#000" }}
+                        icon={faGithub}
+                      />
                     </button>
                   </a>
                 </div>

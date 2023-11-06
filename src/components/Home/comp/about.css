@@ -88,6 +88,7 @@
 }
 
 .links-about {
+    
     display: flex;
     justify-content: start;
     margin:auto;
@@ -103,6 +104,8 @@
     margin-bottom: 100px;
     backdrop-filter: blur(5px);
 }
+
+
 
 .links-about span {
     margin-left: 50px;

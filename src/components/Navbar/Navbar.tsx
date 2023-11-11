@@ -71,7 +71,7 @@ export default function Navbar() {
           </li>
       </ul>
       <a href="#about" className={`action_btn ${menuVisible ? "hidden" : ""}`}>
-        Start
+        My resume
       </a>
     </div>
   );

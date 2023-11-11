@@ -1,0 +1,22 @@
+.cont-scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.cont-scroll-btn button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #00917c;
+    color: #000;
+    cursor: pointer;
+    font-size: 30px;
+    transition: all ease-in-out 0.3s;
+    border: none;
+}
+
+.cont-scroll-btn button:hover {
+    transform: scale(1.1);
+    color: white;
+}

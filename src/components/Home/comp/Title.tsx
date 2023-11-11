@@ -48,7 +48,7 @@ export default function Title() {
   const [titl] = useState(titles)
   return (
   
-  <div id="rotate-words">
+  <div id="home">
      {titl.map((titl, index) => (
       <div key={index}>
         {titl.main}

@@ -9,6 +9,8 @@ import {
   faSoundcloud,
 } from "@fortawesome/free-brands-svg-icons";
 
+
+
 export default function About() {
   const skill = [
     {
@@ -51,6 +53,7 @@ export default function About() {
     <>
       <div className="master-container">
         <div className="container-about">
+          
           <div className="about-text">
             <Reveal>
               <h1>About.</h1>
@@ -86,7 +89,36 @@ export default function About() {
                 to the success of innovative projects.
               </p>
             </Reveal>
+            <br />
+            <Reveal>
+              <p>
+                I am aware of the importance of continuous learning and I am
+                constantly striving to keep up with the latest trends and
+                technologies in the industry. I am a diligent, reliable and
+                motivated contributor, and I am ready to take on the challenges
+                that come my way in the pursuit of my passion for frontend
+                development.
+              </p>
+            </Reveal>
+            <br />
+            <Reveal>
+              <p>
+                In addition to my dedication to the world of programming, I
+                cultivate a great passion for electronic music. Through the use
+                of programs like Ableton, I enjoy creating and producing
+                original pieces of music.
+              </p>
+            </Reveal>
+            <br />
+            <Reveal>
+              <p>
+                I am excited about what the future holds for me and look forward
+                to new and challenging opportunities in the computer science and
+                programming industry.
+              </p>
+            </Reveal>
           </div>
+          
         </div>
         <div className="container-skills">
           <div className="container1">
@@ -105,20 +137,25 @@ export default function About() {
         </div>
       </div>
       <div className="links-about">
-          <p>My links    <span>→</span>     </p>
-          <a target="blank" href="https://github.com/Jim2510">
-            <FontAwesomeIcon className="ico" icon={faGithub} />
-          </a>
-          <a target="blank" href="https://www.linkedin.com/in/gianmarco-guglielmino-4803a1221/">
-            <FontAwesomeIcon className="ico" icon={faLinkedin} />
-          </a>
-          <a target="blank" href="https://www.reddit.com/?onetap_auto=true">
-            <FontAwesomeIcon className="ico" icon={faReddit} />
-          </a>
-          <a target="blank" href="https://soundcloud.com/guglielmino2510">
-            <FontAwesomeIcon className="ico" icon={faSoundcloud} />
-          </a>
-        </div>
+        <p>
+          My links <span>→</span>{" "}
+        </p>
+        <a target="blank" href="https://github.com/Jim2510">
+          <FontAwesomeIcon className="ico" icon={faGithub} />
+        </a>
+        <a
+          target="blank"
+          href="https://www.linkedin.com/in/gianmarco-guglielmino-4803a1221/"
+        >
+          <FontAwesomeIcon className="ico" icon={faLinkedin} />
+        </a>
+        <a target="blank" href="https://www.reddit.com/?onetap_auto=true">
+          <FontAwesomeIcon className="ico" icon={faReddit} />
+        </a>
+        <a target="blank" href="https://soundcloud.com/guglielmino2510">
+          <FontAwesomeIcon className="ico" icon={faSoundcloud} />
+        </a>
+      </div>
     </>
   );
 }

@@ -17,7 +17,40 @@
     width: 100%;
     color: #fff;
     padding: 20px;
-    
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+/* Stile del container della scrollbar */
+.about-text::-webkit-scrollbar {
+    width: 1px;
+    background-color: #0000007c; /* Cambia il colore di sfondo della scrollbar */
+  }
+  
+  /* Stile del cursore della scrollbar */
+  .about-text::-webkit-scrollbar-thumb {
+    background-color: #00917c; /* Cambia il colore del cursore della scrollbar */
+    border-radius: 0; /* Bordi arrotondati del cursore */
+  }
+  
+  /* Stile della traccia della scrollbar (l'area grigia intorno al cursore) */
+  .about-text::-webkit-scrollbar-track {
+    background: transparent; /* Trasparenza intorno al cursore */
+  }
+
+  .about-text::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #00917c); /* Aggiungi un gradiente */
+    border-radius: 0; /* Bordi arrotondati del cursore */
+}
+
+/* Quando si è in cima, il cursore sarà completamente trasparente */
+.about-text::-webkit-scrollbar-thumb:vertical:start {
+    background: transparent;
+}
+
+/* Quando si è in fondo, il cursore sarà completamente pieno */
+.about-text::-webkit-scrollbar-thumb:vertical:end {
+    background: #00917c;
 }
 
 .about-text h1 {
